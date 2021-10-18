@@ -1,0 +1,22 @@
+function reloj (pos_x: number, pos_y: number) {
+    basic.pause(1000)
+    Aguja.set(LedSpriteProperty.X, pos_x)
+    Aguja.set(LedSpriteProperty.X, pos_y)
+    reloj(3, 0)
+    reloj(4, 1)
+    reloj(4, 2)
+    reloj(4, 3)
+    reloj(3, 4)
+    reloj(2, 4)
+    reloj(1, 4)
+    reloj(0, 3)
+    reloj(0, 2)
+    reloj(0, 1)
+    reloj(1, 0)
+    reloj(2, 0)
+    music.playMelody("C5 B A G F E D C ", 120)
+    basic.showString("Hora de codigo")
+}
+let Aguja: game.LedSprite = null
+let Centro = game.createSprite(2, 2)
+Aguja = game.createSprite(2, 0)
